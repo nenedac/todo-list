@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'; // Import Link from next/link
 import { HiMenu } from 'react-icons/hi';
 
 const Navbar: React.FC = () => {
@@ -8,9 +9,11 @@ const Navbar: React.FC = () => {
     {/* Flex container for left-aligned items */}
     <div className="flex items-center space-x-4">
      {/* Menu Icon */}
-     <a href="/" className="text-white text-2xl cursor-pointer">
-      <HiMenu />
-     </a>
+     <Link href="/">
+      <a className="text-white text-2xl cursor-pointer">
+       <HiMenu />
+      </a>
+     </Link>
      {/* Text */}
      <span className="text-white font-extrabold tracking-tight text-2xl">
       React Todos
