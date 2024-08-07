@@ -10,9 +10,9 @@ const Navbar: React.FC = () => {
     <div className="flex items-center space-x-4">
      {/* Menu Icon */}
      <Link href="/">
-      <a className="text-white text-2xl cursor-pointer">
+      <div className="text-white text-2xl cursor-pointer">
        <HiMenu />
-      </a>
+      </div>
      </Link>
      {/* Text */}
      <span className="text-white font-extrabold tracking-tight text-2xl">
